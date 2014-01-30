@@ -25,6 +25,10 @@ angular.module('angularFullstackTestApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+      .when('/test', {
+        templateUrl: 'partials/test',
+        controller: 'TestCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
