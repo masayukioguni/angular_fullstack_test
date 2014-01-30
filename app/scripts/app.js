@@ -29,6 +29,10 @@ angular.module('angularFullstackTestApp', [
         templateUrl: 'partials/test',
         controller: 'TestCtrl'
       })
+      .when('/game', {
+        templateUrl: 'partials/game',
+        controller: 'GameCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
